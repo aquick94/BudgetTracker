@@ -1,0 +1,5 @@
+Account	985.25
+Rent	300
+Phone	90
+Car	350
+Insurance	75
