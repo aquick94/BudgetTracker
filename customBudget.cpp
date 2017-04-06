@@ -41,6 +41,46 @@ void budgetArray::updateTotal(string name, double value)
         cout << name << " does not exist in the current list." << endl;
 }
 
+void budgetArray::adjustTotal(string name, double value)
+{
+    if (find(fields.begin(), fields.end(), name) != fields.end() )
+    {
+        for (int i = 0; i < fields.size(); i++)
+        {
+            if (fields[i] == name)
+            {
+                fieldValues[i] += value;
+                cout << name << " updated successfully.";
+                break;
+            }
+        }
+    }
+    else
+        cout << name << " does not exist in the current list." << endl;
+}
+
+void budgetArray::addTo()
+{
+    string f;
+    double n;
+    cout << "Enter the name of the field would you like to add to: ";
+    cin >> f;
+    cout << "How much would you like to add? : $";
+    cin >> n;
+    adjustTotal(f, n);
+}
+
+void budgetArray::subFrom()
+{
+    string f;
+    double n;
+    cout << "Enter the name of the field would you like to subtract from: ";
+    cin >> f;
+    cout << "How much would you like to subtract? : $";
+    cin >> n;
+    adjustTotal(f, -n);
+}
+
 void budgetArray::removeField(string name)
 {
     if (find(fields.begin(), fields.end(), name) != fields.end())

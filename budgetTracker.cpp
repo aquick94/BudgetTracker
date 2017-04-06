@@ -5,28 +5,51 @@
 
 using namespace std;
 
-struct genericBudget // Need to put in separate file, currently doing nothing
-{
-    double currentFunds;
-    double currentSavings;
-    double currentDebt;
-
-    double income;
-    double monthlySavings;
-
-    double rent;
-    double utilities;
-    double transpotation;
-    double food;
-    double insurance;
-    double entertainment;
-    double personal;
-    double misc;
-};
-
-
 int main()
 {
+    // Not ready for implementation
+    /*char input = ' ';
+
+    cout << "1. Predefined Budget Options (Coming Soon)" << endl;
+    cout << "2. Custom Budget Options" << endl;
+    cout << "Choose an option: ";
+    cin >> input;
+    cin.ignore();
+    if (input == '1')
+    {
+        genericBudget budget;
+
+        genericMenu(budget);
+    }
+    else if (input == '2')
+    {
+        budgetArray budget;
+
+        menu(budget);
+    }
+    else
+    {
+        while (input != '1' && input != '2')
+        {
+            cout << "Choose a valid option: ";
+            cin >> input;
+            cin.ignore()
+
+            if (input == '1')
+            {
+                genericBudget budget;
+
+                genericMenu(budget);
+            }
+            else if (input == '2')
+            {
+                budgetArray budget;
+
+                menu(budget);
+            }
+        }
+    } */
+
     budgetArray budget;
 
     menu(budget);

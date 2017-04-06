@@ -16,6 +16,9 @@ class budgetArray
         ~budgetArray();
         void addField (string name);
         void updateTotal (string name, double value);
+        void addTo();
+        void subFrom();
+        void adjustTotal(string name, double value);
         void removeField (string name);
         void displayOne (string name);
         void displayAll();
