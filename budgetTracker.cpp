@@ -1,16 +1,20 @@
 #include <iostream>
 #include "customBudget.h"
 #include "customBudget.cpp"
-#include "menu.cpp"
+#include "genericBudget.h"
+#include "genericBudget.cpp"
+#include "genericMenu.cpp"
+#include "customMenu.cpp"
 
 using namespace std;
 
 int main()
 {
-    // Not ready for implementation
-    /*char input = ' ';
+    char input = ' ';
 
-    cout << "1. Predefined Budget Options (Coming Soon)" << endl;
+    cout << "Budget Tracker v1.0" << endl << "----------------------------" << endl;
+
+    cout << "1. Predefined Budget Options" << endl;
     cout << "2. Custom Budget Options" << endl;
     cout << "Choose an option: ";
     cin >> input;
@@ -25,7 +29,7 @@ int main()
     {
         budgetArray budget;
 
-        menu(budget);
+        customMenu(budget);
     }
     else
     {
@@ -33,7 +37,7 @@ int main()
         {
             cout << "Choose a valid option: ";
             cin >> input;
-            cin.ignore()
+            cin.ignore();
 
             if (input == '1')
             {
@@ -45,14 +49,9 @@ int main()
             {
                 budgetArray budget;
 
-                menu(budget);
+                customMenu(budget);
             }
         }
-    } */
-
-    budgetArray budget;
-
-    menu(budget);
-
+    }
     return 0;
 }
